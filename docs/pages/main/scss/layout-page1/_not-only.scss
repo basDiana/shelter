@@ -1,0 +1,95 @@
+.not_only{  
+    background-image: url(../../../assets/images/noise_transparent2x.png), linear-gradient(to right, #584538, #222021);
+}
+.not_only__body{
+    display: flex;
+    justify-content: space-between;  
+    padding-top: 154px;
+}
+.not_only__text{
+    max-width: 460px;
+    margin-right: 42px;
+    margin-top: 192px;
+}
+.not_only__title{
+    @include font('Georgia', normal, 400, 44px, 130%);
+    margin-top: 0px;
+    color: $color-light;
+    margin-bottom: 42px;
+}
+.not_only__subtitle{
+    @include font('Arial', normal, 400, 15px, 160%);
+    color: $color-text;
+    margin-top: 0;
+    margin-bottom: 56px;
+}
+.not_only__button{
+    @include font('Georgia', normal, 400, 17px, 130%);
+    letter-spacing: 0.06em;
+    color: $color-text-dark;
+    padding: 15px 45px;
+    background-color: $color-primary;
+    border: 0;
+    border-radius: 50px;
+    text-decoration: none; 
+}
+.not_only__button:hover{
+    background-color: $color-primary-light; 
+}
+.not_only__picture{
+    margin-top: 29px;
+}
+
+@media ( max-width: 1035px ){
+    .not_only__body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .not_only__text{ 
+        margin: 0; 
+        display: flex;
+        flex-direction: column; 
+    }
+    .not_only__subtitle{
+        margin-bottom: 40px;
+    }
+    .not_only__picture{
+        width: 569px;
+        height: 593px;
+        margin-top: 99px;
+        margin-left: 19%;
+    }
+    .not_only__button{ 
+        align-self: center;
+    }
+}
+@media ( max-width: 715px ){
+    .not_only__picture{ 
+        margin-left: 5%;
+    }
+}
+@media (max-width: 645px){
+    .not_only__body{
+        padding-top: 151px;
+    }
+    .not_only__title{
+        font-size: 25px;
+        text-align: center; 
+        letter-spacing: 0.06em;
+    }
+    .not_only__subtitle{
+        white-space: normal;
+        text-align: center;
+        font-size: 14px;
+        line-height: 172%;
+    }
+    .not_only__text{
+        align-items: center;
+    }
+    .not_only__picture{
+        width: 260px;
+        height: 271px;
+        margin: 105px 0 2px 38px;
+    }
+}
+

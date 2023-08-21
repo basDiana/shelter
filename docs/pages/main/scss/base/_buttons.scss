@@ -1,0 +1,13 @@
+button{
+    @extend %transition;
+    &:hover{
+        background-color: $color-primary-light;
+    }
+}
+a,
+button{
+    &:hover{
+        cursor: pointer; 
+        @extend %transition;
+    } 
+}

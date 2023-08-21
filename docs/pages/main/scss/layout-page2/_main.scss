@@ -1,0 +1,147 @@
+main{
+    flex: 1 1 auto;
+}
+.pets-friends{
+    background-color: $color-background;
+}
+.pets-friends__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 51px; 
+}
+.pets-friends__title{
+    @include font('Georgia', normal, 400, 35px, 130%);
+    text-align: center;
+    letter-spacing: 0.06em; 
+    color: $color-subtitle;
+    margin-bottom: 0;
+}
+.pets-friends__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 28px;
+}
+.pets-friends__card{ 
+    background-color: $color-cards-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 270px;
+    height: 435px;
+    margin-bottom: 30px;
+    border-radius: 9px; 
+    transition: all 0.5s;
+}
+.pets-friends__card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color:  $color-light;
+}
+.pets-friends__card:hover .pets-card__button{
+    background-color: $color-primary-light;
+}
+.pets-card__name{
+    @include font('Georgia', normal, 400, 20px, 23px);
+    text-align: center;
+    letter-spacing: 0.06em; 
+    color: $color-subtitle;
+}
+.pets-card__button{
+    @include font('Georgia', normal, 400, 17px, 130%);
+    letter-spacing: 0.06em;
+    color: $color-text-dark;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    background-color: $color-light;
+    padding: 13px 45px; 
+    margin-top: 11px;
+    transition: all 0.5s;
+}
+.pets-card__image{
+    width: 100%;
+    margin-bottom: 9px;
+    border-radius: 9px 9px 0 0;
+}
+.pets-friends__buttons{
+    max-width: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 98px; 
+}
+.pets-friends__button{
+    @include font('Georgia', normal, 400, 20px, 115%);
+    border: 2px solid $color-primary;
+    border-radius: 100px; 
+    padding: 13px 21px;
+    letter-spacing: 0.06em; 
+    color: $color-text-dark;
+    background-color: $color-background;
+}
+.pets-friends__button:nth-child(1),
+.pets-friends__button:nth-child(5){
+    padding: 15px 12px;
+} 
+.pets-friends__button:nth-child(3){
+    background-color: $color-primary;
+} 
+.button-disabled{
+    cursor: default;
+    color: $color-text;
+    border: 2px solid $color-text;
+    &:hover{
+        background-color: $color-background;
+        cursor: default;
+    }
+} 
+@media ( max-width: 1120px){
+    .pets-friends__cards{
+        justify-content: center;
+        padding-top: 32px;
+        column-gap: 41px;
+        margin-bottom: 5px;
+    }  
+    .pets-friends__card:nth-child(1n+7) {
+        display: none;
+    } 
+    .pets-friends__buttons{
+        margin-bottom: 74px;
+    }
+} 
+@media ( max-width: 620px){
+    .pets-friends__body{
+        padding-top: 42px;
+    }
+    .pets-friends__title{
+        margin-top: 0;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+    } 
+    .pets-friends__cards{
+        padding-top: 41px;
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+    .pets-friends__card:nth-child(1n+4) {
+        display: none;
+    }   
+    
+    .pets-friends__buttons{
+         width: 300px; 
+         margin-bottom: 45px;
+    }
+    .pets-friends__button{
+        padding: 10px 15px;
+        width: 52px;
+        height: 52px;
+    }
+    .pets-friends__button:nth-child(1), 
+    .pets-friends__button:nth-child(5) {
+        padding: 10px 12px;
+    }
+}

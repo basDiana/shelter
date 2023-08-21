@@ -1,0 +1,59 @@
+@font-face {
+    font-family: ArialRegular;
+    src: url("../../assets/fonts/ArialRegular.ttf"),
+    url("../../assets/fonts/ArialRegular.eot"),
+    url("../../assets/fonts/ArialRegular.woff"),
+    url("../../assets/fonts/AnyConv.com__ArialRegular.woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: ArialItalic;
+    src: url("../../assets/fonts/ArialItalic.ttf"),
+    url("../../assets/fonts/ArialItalic.eot"),
+    url("../../assets/fonts/ArialItalic.woff"),
+    url("../../assets/fonts/AnyConv.com__ArialItalic.woff2");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: GeorgiaRegular;
+    src: url("../../assets/fonts/Georgia\ \(1\).ttf"),
+    url("../../assets/fonts/Georgia.eot"),
+    url("../../assets/fonts/Georgia.woff"),
+    url("../../assets/fonts/Georgia.woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: GeorgiaItalic;
+    src: url("../../assets/fonts/Georgia-Italic.ttf"),
+    url("../../assets/fonts/Georgia-Italic.eot"),
+    url("../../assets/fonts/Georgia-Italic.woff"),
+    url("../../assets/fonts/Georgia-Italic.woff2");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: GeorgiaBold;
+    src: url("../../assets/fonts/Georgia-Bold.ttf"),
+    url("../../assets/fonts/Georgia-Bold.eot"),
+    url("../../assets/fonts/Georgia-Bold.woff"),
+    url("../../assets/fonts/Georgia-Italic.woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+html,
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.container{
+    box-sizing: border-box;
+    max-width: 1240px;
+    margin: 0 auto;   
+    padding: 0 20px;
+}

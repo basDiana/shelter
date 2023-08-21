@@ -1,0 +1,18 @@
+@import "base/fonts";
+@import "abstracts/variables";
+@import "abstracts/placeholders";
+@import "abstracts/mixins";
+@import "base/buttons";
+
+
+@import "layout-page1/header";
+@import "layout-page1/not-only";
+@import "layout-page1/about";
+@import "layout-page1/our-friends";
+@import "layout-page1/help";
+@import "layout-page1/addition";
+@import "layout-page1/footer";
+
+@import "layout-page2/header";
+@import "layout-page2/main";
+@import "layout-page2/footer";

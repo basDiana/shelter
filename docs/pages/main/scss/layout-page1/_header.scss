@@ -1,0 +1,122 @@
+.header{   
+    position: absolute; 
+     left: 0;
+     right: 0;
+     margin: 22px auto 0 auto; 
+     max-width: 1240px; 
+}  
+.header__body{
+    display: flex;
+    justify-content: space-between; 
+}
+.header__logo{
+    text-decoration: none;
+    margin-left: 3px;
+}
+.header__burger{ 
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 22px; 
+    &::before{
+        content: "";
+        display: inline-block; 
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary; 
+        top: 0; 
+        left: 0; 
+        border: none;
+    }
+    &::after{
+        content: "";
+        display: inline-block; 
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary; 
+        bottom: 0; 
+        left: 0;  
+        border: none;
+    }
+}
+.burger__line{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary;
+    position: absolute;
+    top: calc(50% - 1px);
+    border: none;
+}
+.header__title{
+    @include font('Georgia', normal, 400, 32px, 110%);
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+.header__description{
+    @include font('Arial', normal, 400, 13px, 15px);
+    letter-spacing: 0.1em;
+    color: $color-light;
+}
+.header__navigation{
+    @include font('Arial', normal, 400, 15px, 160%);
+    display: flex;
+    align-items: center ;
+    padding-top: 8px;
+}
+nav a {
+    text-decoration: none;
+    color: $color-text;
+    margin-left: 36px; 
+    transition: all 0.5s;
+} 
+nav a{
+    &:not(:first-child){
+        &:hover{
+            color: $color-light;
+        }
+    }
+}
+nav a{
+    &:nth-child(1){
+        color: $color-cards-background;
+        border-bottom: 3px solid  $color-primary;
+        cursor: default;
+    }
+}
+
+@media (max-width: 767.9px)  {
+    .header__logo{
+        margin-right: 43px;
+        margin-left: 12px;
+    }
+    .header__navigation{
+        display: none;
+    }
+    .header__burger{
+        display: inline-block;
+        margin-top: 8px;
+    }
+    .header__body{
+        justify-content: space-between;  
+        align-items: center;
+    } 
+} 
+@media (max-width: 768px){
+    .header__logo{
+        margin-left: 11px;
+    } 
+    nav a{
+        margin-left: 41px;
+    }
+
+}
+@media (max-width: 320px){
+    .header__logo{
+        margin-left: 0px;
+    }  
+}

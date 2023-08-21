@@ -1,0 +1,131 @@
+.addition{
+    background-color: $color-background;
+}
+// .addition__body{
+//     padding-top: 80px;
+//     padding-bottom: 88px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     align-items: center;
+//     letter-spacing: 0.06em; 
+//     color: $color-dark;
+// }
+// .addition__picture{
+//     margin-top: -8px;
+//     margin-left: 142px;
+//     margin-right: 30px;
+// }
+.addition__body{
+    letter-spacing: 0.06em; 
+    color: $color-dark;
+    padding-top: 82px;
+    padding-bottom: 89px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    column-gap: 2%;
+}
+.addition__title{ 
+    @include font('Georgia', normal, 400, 35px, 130%);
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+}
+.addition__info{ 
+    @include font('Georgia', normal, 400, 15px, 110%);
+}
+.addition__card{
+    @include font('Georgia', normal, 400, 20px, 115%);
+    margin-top: 17px;
+    margin-bottom: 20px;
+    background-color: $color-primary;
+    border-radius: 9px;
+    width: 349px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: $color-subtitle;
+}
+.addition__credit{
+    width: 30px;
+    height: 23px;
+}
+.addtition__description{ 
+    @include font('Arial', italic, 400, 12px, 18px);
+    align-items: center;
+    color: #B2B2B2;
+    letter-spacing: 0;
+    max-width: 380px;
+}
+
+@media ( max-width: 920px ){
+    .addition__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding-bottom: 98px;
+        padding-top: 80px;
+    }
+    .addition__picture{
+        order: 2;
+        margin: 0;
+        width: 66vw;
+    }
+    .addition__title{
+        margin-bottom: 17px;
+    }
+    .addition__text{
+        order: 1;  
+        margin-bottom: 49px;
+    }
+}
+
+@media (max-width: 460px){ 
+    .addition__body{
+        justify-content: center;
+        align-items: center;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    .addition__picture{
+        width: 260px;
+        height: 135px;
+    }
+    .addition__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 2px;
+        margin-bottom: 30px;
+    }
+    .addition__card{
+        font-size: 17px; 
+        width: 281px;
+        margin-top: 24px;
+        margin-bottom: 8px;
+        letter-spacing: 0.0em;  
+        justify-content: start;
+    }
+    .addition__credit{
+        margin-right: 16px;
+        margin-left: 14px;
+    }
+    .addition__title{
+        font-size: 25px; 
+        margin-bottom: 25px;
+    }
+    .addition__info{
+        font-size: 13px;
+    }
+    .addtition__description{  
+        text-align: justify; 
+    }
+}
